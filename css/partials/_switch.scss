@@ -1,0 +1,123 @@
+.dd-active {
+    > .dd-btn::after {
+        border-top: 0;
+        border-bottom: .4rem solid;
+    }
+
+    #dist-drop-list {
+        display: flex;
+    }
+}
+
+.drop-item-hidden {
+    display: none;
+}
+
+.dd-close {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    &-active {
+        display: block;
+    }
+}
+
+.nrd-switch {
+    position: relative;
+    top: 368px;
+
+    @media (max-width: 980px) {
+        top: 441px;
+    }
+
+    @media (max-width: 768px) {
+        top: 431px;
+    }
+
+    @media (max-width: 540px) {
+        top: 468px;
+    }
+
+    @media (max-width: 380px) {
+        top: 463px;
+    }
+}
+
+.ram-switch {
+    position: relative;
+    top: -367px;
+
+    @media (max-width: 980px) {
+        top: -440px;
+    }
+
+    @media (max-width: 768px) {
+        top: -430px;
+    }
+
+    @media (max-width: 540px) {
+        top: -582px;
+    }
+
+    @media (max-width: 380px) {
+        top: -577px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .nrd-switch {
+        top: 363px;
+    
+        @media (max-width: 980px) {
+            top: 434px;
+        }
+    
+        @media (max-width: 768px) {
+            top: 424px;
+        }
+    
+        @media (max-width: 540px) {
+            top: 460px;
+        }
+    
+        @media (max-width: 380px) {
+            top: 455px;
+        }
+    }
+}
+
+@-moz-document url-prefix() { 
+    .nrd-switch {
+        position: relative;
+        top: 368px;
+    
+        @media (max-width: 980px) {
+            top: 441px;
+        }
+    
+        @media (max-width: 768px) {
+            top: 431px;
+        }
+    
+        @media (max-width: 540px) {
+            top: 468px;
+        }
+    
+        @media (max-width: 380px) {
+            top: 463px;
+        }
+    }
+}
+
+.js-show {
+    display: block;
+}
+
+.js-hide {
+    display: none;
+}

@@ -1,0 +1,144 @@
+@media (max-width: 980px) {
+    #page-content {
+        .dist-right {
+            p,
+            a {
+                font-size: .9rem;
+            }
+            
+            p {
+                margin-top: 10px;
+            }
+
+            a {
+                line-height: 1rem;
+            }
+        }
+
+        .dist-cont {
+            h3 {
+                font-size: 1.4rem;
+            }
+
+            .dist-vr {
+                border-top: 1px solid #ccc;
+            }
+        }
+    }
+
+    .dist-lower {
+        flex-direction: column;
+    }
+
+    .dist-left,
+    .dist-right {
+        width: 100%;
+    }
+
+    .dist-right {
+        flex-flow: row wrap;
+
+        p {
+            flex-basis: 49.5%;
+            text-align: center;
+            display: inline;
+        }
+
+        i {
+            margin-right: 8px;
+            margin-top: 0;
+        }
+
+        .guangzhou-mail {
+            margin-right: 6px;
+        }
+    }
+
+    #prodotti {
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dist-flag {
+        height: 50px;
+    }
+}
+
+@media (max-width: 540px) {
+    .dist-flag {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    
+        img {
+            height: 50px;
+
+            &:nth-child(2n),
+            &:nth-child(3n) {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .dist-right {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 434px) {
+    .czechia {
+        .dist-flag {
+            img {
+                min-width: 75.1px;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .dist-left {
+        img {
+            max-width: 240px;
+            max-height: 45px; 
+        }
+    }
+}
+
+
+@media (min-width: 760px) {
+
+}
+
+@media (min-width: 870px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1800px) {
+
+}
+
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\  BROWSER COMPATIBILITY \\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+/* EDGE */
+@supports (-ms-ime-align:auto) {
+    .dist-right {
+        justify-content: space-between;
+    }
+}
+  
+/* IE 10 & 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .dist-right {
+        justify-content: space-between;
+    }
+}
